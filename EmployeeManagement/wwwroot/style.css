@@ -1,0 +1,62 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.centered-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+.back-btn {
+    background-color: #008CBA; /* Blue */
+}
+
+    .back-btn:hover {
+        background-color: #007bb5;
+    }
+
+#employeeList {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #employeeList li {
+        background: #fff;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+    .navigation .menu,
+    .navigation .links {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+    }

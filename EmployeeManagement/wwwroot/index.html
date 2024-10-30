@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upravljanje Zaposlenicima</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include your script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="centered-title">
+        <h1>Upravljanje Zaposlenicima</h1>
+    </div>
+
+    <div class="navigation">
+        <div class="links">
+            <a href="ER_diagram.png" class="btn" target="_blank">ER Dijagram</a>
+            <a href="https://github.com/matejsudo/CSHARP_API_TalentAgencija.com/" class="btn" target="_blank">GitHub Repozitorij</a>
+        </div>
+    </div>
+
+    <!-- Employee Form -->
+    <form id="employeeForm">
+        <div class="form-group">
+            <label for="firstName">Ime:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Prezime:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="position">Pozicija:</label>
+            <input type="text" id="position" name="position" required>
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth">Datum Rođenja:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+        </div>
+        <div class="form-group">
+            <label for="salary">Plaća:</label>
+            <input type="number" id="salary" name="salary" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="hireDate">Datum Zapošljavanja:</label>
+            <input type="date" id="hireDate" name="hireDate">
+        </div>
+        <button type="submit" class="btn">Dodaj Zaposlenika</button>
+    </form>
+
+    <!-- Employee List -->
+    <div>
+        <h2>Lista Zaposlenika</h2>
+        <ul id="employeeList"></ul>
+    </div>
+</body>
+</html>
